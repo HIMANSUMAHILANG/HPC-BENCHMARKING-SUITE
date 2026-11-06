@@ -140,4 +140,3 @@ This project helped me gain practical experience in:
 
 The goal is to move beyond simply deploying an HPC infrastructure toward measuring, understanding, and engineering its performance.
 
-#HPC #HighPerformanceComputing #PerformanceEngineering #Slurm #OpenMPI #ReFrame #HPL #OSU #STREAM #Linux #RockyLinux #DistributedComputing #ScientificComputing
