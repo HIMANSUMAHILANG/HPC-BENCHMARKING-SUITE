@@ -1,0 +1,4 @@
+This test requires exactly two processes
+This test requires exactly two processes
+srun: error: compute2: task 1: Exited with exit code 1
+srun: error: compute1: task 0: Exited with exit code 1

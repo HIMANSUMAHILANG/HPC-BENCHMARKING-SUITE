@@ -1,0 +1,133 @@
+========================================
+          HPC BENCHMARK START            
+========================================
+JOB ID: 537
+JOB NODELIST: compute[1-2]
+NUMBER OF NODES: 2
+NUMBER OF TASKS: 4
+TASKS PER NODE: 2(x2)
+========================================
+========== HPL SOFTWARE ==========
+
+Currently Loaded Modules:
+  1) hpl   3) stream     5) gcc/13.0
+  2) osu   4) openblas   6) mpi-5.0.10/5.0.10
+
+ 
+
+/apps/packages/hpl/hpl-2.3/bin/Linux_Rocky9/xhpl
+	linux-vdso.so.1 (0x00007ffeeedd8000)
+	libopenblas.so.0 => /apps/packages/openblas/lib/libopenblas.so.0 (0x00007ffa9d60f000)
+	libmpi.so.40 => /apps/packages/openmpi-5.0.10/lib/libmpi.so.40 (0x00007ffa9d2a6000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007ffa9d000000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007ffa9cf23000)
+	libgfortran.so.5 => /apps/packages/gcc-13.0/lib64/libgfortran.so.5 (0x00007ffa9cc4c000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007ffa9e5b7000)
+	libopen-pal.so.80 => /apps/packages/openmpi-5.0.10/lib/libopen-pal.so.80 (0x00007ffa9cb3a000)
+	libpmix.so.2 => /usr/local/lib/libpmix.so.2 (0x00007ffa9c800000)
+	libhwloc.so.15 => /usr/local/lib/libhwloc.so.15 (0x00007ffa9d242000)
+	libevent_core-2.1.so.7 => /usr/local/lib/libevent_core-2.1.so.7 (0x00007ffa9d20c000)
+	libevent_pthreads-2.1.so.7 => /usr/local/lib/libevent_pthreads-2.1.so.7 (0x00007ffa9cb35000)
+	libgcc_s.so.1 => /apps/packages/gcc-13.0/lib64/libgcc_s.so.1 (0x00007ffa9cb10000)
+========== HPL INPUT ==========
+-rw-r--r--. 1 test35 10027 1007 Nov  5 18:04 HPL.dat
+HPLinpack benchmark input file
+Rocky Linux 9.8 - VirtualBox
+HPL.out      output file name (if any)
+6            device out (6=stdout,7=stderr,file)
+1            # of problems sizes (N)
+4000         Ns
+1            # of NBs
+128          NBs
+0            PMAP process mapping (0=Row-,1=Column-major)
+1            # of process grids (P x Q)
+2            Ps
+2            Qs
+16.0         threshold
+1            # of panel fact
+2            PFACTs (0=left, 1=Crout, 2=Right)
+1            # of recursive stopping criterium
+4            NBMINs
+1            # of panels in recursion
+2            NDIVs
+1            # of recursive panel fact.
+1            RFACTs
+1            # of broadcast
+1            BCASTs
+1            # of lookahead
+0            DEPTHs
+2            SWAP (0=bin-exch,1=long,2=mix)
+64           swapping threshold
+0            L1 in (0=transposed,1=no-transposed) form
+0            U in (0=transposed,1=no-transposed) form
+1            Equilibration
+8            memory alignment in double (> 0)
+========== HPL NODE ALLOCATION ==========
+compute1.local
+compute1.local
+compute2.local
+compute2.local
+========== STARTING HPL ==========
+================================================================================
+HPLinpack 2.3  --  High-Performance Linpack benchmark  --   December 2, 2018
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    4000 
+NB     :     128 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       2 
+PFACT  :   Right 
+NBMIN  :       4 
+NDIV   :       2 
+RFACT  :   Crout 
+BCAST  :  1ringM 
+DEPTH  :       0 
+SWAP   : Mix (threshold = 64)
+L1     : transposed form
+U      : transposed form
+EQUIL  : yes
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR01C2R4        4000   128     2     2              14.96             2.8531e+00
+HPL_pdgesv() start time Fri Nov  6 15:38:09 2026
+
+HPL_pdgesv() end time   Fri Nov  6 15:38:25 2026
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   2.91679309e-03 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================

@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH --job-name="rfm_osu_latency_test_a9513bcd"
+#SBATCH --ntasks=2
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --output=rfm_job.out
+#SBATCH --error=rfm_job.err
+#SBATCH --partition=High
+#SBATCH --nodelist=compute1,compute2
+module load hpl
+module load osu
+module load stream
+module load openblas
+module load gcc/13.0
+module load mpi-5.0.10
+module load gcc
+module load mpi-5.0.10
+module load osu
+srun --cpus-per-task=1 osu_latency -m 8:8 -x 100 -i 1000

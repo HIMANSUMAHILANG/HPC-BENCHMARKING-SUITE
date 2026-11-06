@@ -1,0 +1,14 @@
+=== HOSTNAME & KERNEL ===
+master.local
+Linux master.local 5.14.0-687.49.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Thu Sep 17 15:51:52 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+=== CPU INFO ===
+Model name:                              Intel(R) Core(TM) i7-14700
+Thread(s) per core:                      1
+Core(s) per socket:                      2
+Socket(s):                               1
+=== MEMORY INFO ===
+               total        used        free      shared  buff/cache   available
+Mem:           2.6Gi       983Mi       868Mi        30Mi       958Mi       1.6Gi
+Swap:          2.9Gi          0B       2.9Gi
+=== PROG ENVIRONMENT ===
+main code

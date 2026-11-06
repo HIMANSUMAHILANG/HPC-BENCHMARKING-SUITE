@@ -1,0 +1,48 @@
+--------------------------------------------------------------------------
+A requested component was not found, or was unable to be opened.  This
+means that this component is either not installed or is unable to be
+used on your system (e.g., sometimes this means that shared libraries
+that the component requires are unable to be found/loaded).  Note that
+PMIx stopped checking at the first component that it did not find.
+
+Host:      compute1.local
+Framework: psec
+Component: munge
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A requested component was not found, or was unable to be opened.  This
+means that this component is either not installed or is unable to be
+used on your system (e.g., sometimes this means that shared libraries
+that the component requires are unable to be found/loaded).  Note that
+PMIx stopped checking at the first component that it did not find.
+
+Host:      compute1.local
+Framework: psec
+Component: munge
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A requested component was not found, or was unable to be opened.  This
+means that this component is either not installed or is unable to be
+used on your system (e.g., sometimes this means that shared libraries
+that the component requires are unable to be found/loaded).  Note that
+PMIx stopped checking at the first component that it did not find.
+
+Host:      compute2.local
+Framework: psec
+Component: munge
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+A requested component was not found, or was unable to be opened.  This
+means that this component is either not installed or is unable to be
+used on your system (e.g., sometimes this means that shared libraries
+that the component requires are unable to be found/loaded).  Note that
+PMIx stopped checking at the first component that it did not find.
+
+Host:      compute2.local
+Framework: psec
+Component: munge
+--------------------------------------------------------------------------
+[compute1][[21926,0],0][btl_tcp_frag.c:127:mca_btl_tcp_frag_send] peer: compute2 mca_btl_tcp_frag_send: writev failed: Connection reset by peer (104)
+slurmstepd: error: *** JOB 466 ON compute1 CANCELLED AT 2026-11-06T11:25:55 ***
+slurmstepd: error: *** STEP 466.0 ON compute1 CANCELLED AT 2026-11-06T11:25:55 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# HPL launcher
+
+if [ -z "$HPL_BIN" ]; then
+    echo "ERROR: HPL module is not loaded"
+    exit 1
+fi
+
+if [ ! -x "$HPL_BIN/xhpl" ]; then
+    echo "ERROR: HPL executable not found"
+    exit 1
+fi
+
+# Use user-provided HPL.dat if present
+if [ ! -f "$PWD/HPL.dat" ]; then
+    echo "ERROR: HPL.dat not found in $PWD"
+    echo "Provide HPL.dat in your working directory."
+    exit 1
+fi
+
+exec mpirun "$@" "$HPL_BIN/xhpl"
