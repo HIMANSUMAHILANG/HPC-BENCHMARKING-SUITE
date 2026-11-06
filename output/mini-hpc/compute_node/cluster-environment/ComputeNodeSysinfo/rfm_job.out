@@ -10,11 +10,7 @@ Socket(s):                               1
                total        used        free      shared  buff/cache   available
 Mem:           2.6Gi       449Mi       2.0Gi       8.0Mi       286Mi       2.1Gi
 Swap:          2.9Gi          0B       2.9Gi
-========== NETWORK INFORMATION ==========
-lo               UNKNOWN        127.0.0.1/8 ::1/128 
-enp0s3           UP             10.0.2.15/24 fd17:625c:f037:2:a00:27ff:fe8a:9032/64 fe80::a00:27ff:fe8a:9032/64 
-enp0s8           UP             192.168.90.111/24 fe80::a00:27ff:fe72:3c79/64 
-enp0s9           UP             192.168.85.114/24 fe80::8c84:6d21:8457:55a5/64 
+
 ========== SOFTWARE ENVIRONMENT ==========
 
 Currently Loaded Modules:
